@@ -159,6 +159,7 @@ const CalculatorScreen = () => {
     return (
         <div>
             <div>
+                 <Container>
                 {/* Below sections are for the full expression (top) and current value (bottom). Tried to mirror my phone calculator display */}
                 <Typography
                     sx={{
@@ -183,7 +184,6 @@ const CalculatorScreen = () => {
                 >
                     {state.currentValue}
                 </Typography>
-                <Container>
                     <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 1 }}>
                         {/* FIRST ROW: AC, +/-, %, divide */}
                         <Button
